@@ -8,6 +8,8 @@ provider:
   memorySize: 2048
   stage: dev
   lambdaHashingVersion: 20201221
+  profile: 'nodejs-lambda'
+
 
 
 functions:
