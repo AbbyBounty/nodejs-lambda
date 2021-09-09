@@ -10,7 +10,7 @@
       "memorySize": 2048,
       "stage": "dev",
       "lambdaHashingVersion": "20201221",
-      "region": "us-east-1",
+      "region": "us-west-1",
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
         "AWSTemplateFormatVersion": "2010-09-09",
@@ -175,7 +175,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/nodejs-lambda/dev/1631175106613-2021-09-09T08:11:46.613Z/nodejs-lambda.zip"
+                "S3Key": "serverless/nodejs-lambda/dev/1631180820241-2021-09-09T09:47:00.241Z/nodejs-lambda.zip"
               },
               "Handler": "server.server",
               "Runtime": "nodejs12.x",
@@ -193,14 +193,14 @@
               "HelloLogGroup"
             ]
           },
-          "HelloLambdaVersionaCaulP5oZWfCS2YYK1hnFHEHKCY4EbuittbF7pFkY": {
+          "HelloLambdaVersion7Y0N3wRDO2gOjaBcHV97LCtCz0F0BpxecwawtODvGn0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "GZtt+L9MlyMaxYSPh3s7dvowEHKhiLQ6lOSJXECyWp8="
+              "CodeSha256": "GcapnZE3h5/V7cGRKUpeMapqHVK7amLt5DGCRvecqRM="
             }
           },
           "ApiGatewayRestApi": {
@@ -441,7 +441,7 @@
               "HelloLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1631175085564": {
+          "ApiGatewayDeployment1631180798831": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -506,7 +506,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersionaCaulP5oZWfCS2YYK1hnFHEHKCY4EbuittbF7pFkY"
+              "Ref": "HelloLambdaVersion7Y0N3wRDO2gOjaBcHV97LCtCz0F0BpxecwawtODvGn0"
             },
             "Export": {
               "Name": "sls-nodejs-lambda-dev-HelloLambdaFunctionQualifiedArn"
@@ -648,7 +648,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersionaCaulP5oZWfCS2YYK1hnFHEHKCY4EbuittbF7pFkY"
+        "versionLogicalId": "HelloLambdaVersion7Y0N3wRDO2gOjaBcHV97LCtCz0F0BpxecwawtODvGn0"
       }
     },
     "configValidationMode": "warn",
@@ -670,7 +670,7 @@
     "artifact": "/Users/abhilash/Desktop/github/nodejs-lambda/.serverless/nodejs-lambda.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/nodejs-lambda/dev/1631175106613-2021-09-09T08:11:46.613Z",
+    "artifactDirectoryName": "serverless/nodejs-lambda/dev/1631180820241-2021-09-09T09:47:00.241Z",
     "artifact": "nodejs-lambda.zip"
   }
 }
