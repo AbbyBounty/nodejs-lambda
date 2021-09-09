@@ -161,9 +161,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/nodejs-lambda/dev/1631180820241-2021-09-09T09:47:00.241Z/nodejs-lambda.zip"
+          "S3Key": "serverless/nodejs-lambda/dev/1631200432800-2021-09-09T15:13:52.800Z/nodejs-lambda.zip"
         },
-        "Handler": "server.server",
+        "Handler": "index.server",
         "Runtime": "nodejs12.x",
         "FunctionName": "nodejs-lambda-dev-hello",
         "MemorySize": 2048,
@@ -179,14 +179,14 @@
         "HelloLogGroup"
       ]
     },
-    "HelloLambdaVersion7Y0N3wRDO2gOjaBcHV97LCtCz0F0BpxecwawtODvGn0": {
+    "HelloLambdaVersionwwPFCxYUNA3cPGSF8695dXAZu8bigHog6LpY6vsgw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "GcapnZE3h5/V7cGRKUpeMapqHVK7amLt5DGCRvecqRM="
+        "CodeSha256": "ZHqBwkhtLqsJXRF27RvuV4yhMLbpW9TSRu24+KwNNJo="
       }
     },
     "ApiGatewayRestApi": {
@@ -427,7 +427,7 @@
         "HelloLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1631180798831": {
+    "ApiGatewayDeployment1631200411591": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -492,7 +492,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersion7Y0N3wRDO2gOjaBcHV97LCtCz0F0BpxecwawtODvGn0"
+        "Ref": "HelloLambdaVersionwwPFCxYUNA3cPGSF8695dXAZu8bigHog6LpY6vsgw"
       },
       "Export": {
         "Name": "sls-nodejs-lambda-dev-HelloLambdaFunctionQualifiedArn"

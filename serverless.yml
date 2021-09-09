@@ -8,14 +8,11 @@ provider:
   memorySize: 2048
   stage: dev
   lambdaHashingVersion: 20201221
-  region: us-west-1
-
-
-
+  
 
 functions:
   hello:
-    handler: server.server
+    handler: index.server
     events:
       - http: ANY /users/ {proxy+}
       - http: POST /users/signup

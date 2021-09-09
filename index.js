@@ -21,26 +21,22 @@ con.on('open', function () {
 app.use(express.json());
 app.use(cors());
 
-// router.get("/", (req, res) => {
-//     res.json({
-//       hello: "hi!"
-//     });
-//   });
+
 
 app.use('/users', userRouter);
 
 app.use(`/api`, router);
 
-app.listen(4000, () => {
-    console.log("The Server is running on http://localhost:9000");
-});
+// app.listen(4000, () => {
+//     console.log("The Server is running on http://localhost:9000");
+// });
 
 app.get('/', async (req, res, next) => {
     res.status(200).send('Hello World! from index')
 })
 
 
-// module.exports = app;
+module.exports = app;
 
 module.exports.server = serverless(app);
 
