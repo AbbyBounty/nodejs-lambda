@@ -1,0 +1,20 @@
+service: nodejs-lambda
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 2048
+  stage: dev
+  lambdaHashingVersion: 20201221
+
+
+functions:
+  hello:
+    handler: server.server
+    events:
+      - http: ANY /users/ {proxy+}
+      - http: POST /users/signup
+      - http: POST /users/signin
+      - http: ANY /
