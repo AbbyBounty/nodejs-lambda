@@ -175,7 +175,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/nodejs-lambda/dev/1631174616138-2021-09-09T08:03:36.138Z/nodejs-lambda.zip"
+                "S3Key": "serverless/nodejs-lambda/dev/1631175106613-2021-09-09T08:11:46.613Z/nodejs-lambda.zip"
               },
               "Handler": "server.server",
               "Runtime": "nodejs12.x",
@@ -441,7 +441,7 @@
               "HelloLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1631174595508": {
+          "ApiGatewayDeployment1631175085564": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -670,7 +670,7 @@
     "artifact": "/Users/abhilash/Desktop/github/nodejs-lambda/.serverless/nodejs-lambda.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/nodejs-lambda/dev/1631174616138-2021-09-09T08:03:36.138Z",
+    "artifactDirectoryName": "serverless/nodejs-lambda/dev/1631175106613-2021-09-09T08:11:46.613Z",
     "artifact": "nodejs-lambda.zip"
   }
 }
