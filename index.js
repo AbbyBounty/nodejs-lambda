@@ -14,7 +14,7 @@ mongoose.connect(url, { useNewUrlParser: true });
 const con = mongoose.connection;
 
 con.on('open', function () {
-    console.log("mongo is running .. 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 ");
+    console.log("mongo is running .. 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 🚀🚀🚀🚀");
 })
 
 //Middleware to be impored and used
