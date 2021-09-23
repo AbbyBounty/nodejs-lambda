@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-// const url = "mongodb://localhost/UrbanFarmerDB";
+//// const url = "mongodb://localhost/UrbanFarmerDB";
 const url = `mongodb+srv://admin:admin@cluster0.kszi7.mongodb.net/urbanfarmer?retryWrites=true&w=majority`
 const app = express();
 const morgan = require('morgan')
